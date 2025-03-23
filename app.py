@@ -33,9 +33,6 @@ def hello_world():
     alldata=database.query.all()
     return render_template('boot.html',alldata=alldata)
     # return "<p>Hello, World!</p>"
-@app.route("/products")
-def products():
-    return render_template("index.html")
     
 @app.route("/show")
 def showing():
