@@ -65,4 +65,4 @@ def update(sno):
     todo=database.query.filter_by(sno=sno).first()
     return render_template('update.html',todo=todo)
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
